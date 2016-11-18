@@ -1,0 +1,25 @@
+encoding "utf8";
+
+TTextMinerConfig {
+  Dictionary = "root_dict.gzt";
+
+  //PrettyOutput = "PrettyOutput.html";
+  //PrintTree="tree.txt";
+  //PrintRules="rules.txt";
+
+  Articles = [
+    { Name = "algfio" }
+    , { Name = "Per" }
+    , { Name = "Org" }
+    , { Name = "Loc" }
+  ]
+
+  Facts = [
+    { Name = "Person" }
+    , { Name = "Object" }
+  ]
+
+  Output = {
+    Format = proto;
+  }
+}
